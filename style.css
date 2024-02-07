@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    z-index: 20;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Unbounded', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    color: #707070;
+    background-color: #161616;
+    padding-top: 10px;
+    width: 1350px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.logo{
+    width: 140px;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav{
+    width: 1134px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul a{
+    padding: 0 50px;
+    text-decoration: none;
+    color: #707070;
+    font-size: 17px;
+}
+
+.search{
+    width: 126px;
+    text-align: right;
+    color: white;
+}
+
+.img-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    background-color: black;
+}
+
+.mainImg{
+    height: 750px;
+    width: 1350px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.mainImg img{
+    position: absolute;
+    z-index: 10;
+    height: 750px;
+    width: 1350px;
+    overflow: hidden;
+    object-fit: cover;
+    overlay: center center;
+}
+
+.image{
+    position:relative;
+    height: 750px;
+    width: 1350px;
+    object-fit: fill;
+    overflow: hidden;
+    z-index: 9;
+    animation: changeImg 40s linear infinite;
+    overlay: center center;
+}
+
+.image img{
+    height: 750px;
+    width: 1350px;
+    object-fit: cover;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    overlay: center center;
+}
+
+@keyframes changeImg {
+    0%{
+        background-image: url(./assets/1.jpeg);
+    }
+    25%{
+        background-image: url(./assets/2.jpeg);
+    }
+    50%{
+        background-image: url(./assets/3.jpeg);
+    }
+    75%{
+        background-image: url(./assets/4.jpeg);
+    }
+    100%{
+        background-image: url(./assets/5.jpeg);
+    }
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.about-container{
+    max-width: 1350px;
+    max-height: 774px;
+    padding: 100px 0px 100px 0px;
+    background-color: black;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.about-container img{
+    overflow: hidden;
+    height: 575px;
+    width: 675px;
+    object-fit: cover;
+    position: absolute;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+h3{
+    color: white;
+    font-size: 17;
+    font-weight: 400;
+    line-height: 25.5px;
+    margin: 0 0 14.4px;
+}
+
+.h2{
+    color: white;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0 0 14.4px;
+    font-weight: 700;
+}
+
+#about-me{
+    color: rgb(236, 236, 236);
+    font-size: 16px;
+    /* margin: 0 0 14.4px; */
+    line-height: 26px;
+    padding: 14.4px 0 30px 0;
+}
+
+.about-buttons button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.about-left{
+    min-width: 50%;
+}
+
+.about-right{
+    width: 50%;
+    padding: 50px 0px 50px 80px;
+}
+
+.about-buttons ul li{
+    padding: 20px 30px 20px 0px;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+hr{
+    border: 0.5px solid #3e3e3e;
+}
+
+.skills{
+    background-color: black;
+    padding: 100px 0;
+    max-width: 1680px;
+    height: 708px;
+}
+
+.skills-container{
+    color: white;
+    max-width: 1350px;
+    display: grid;
+    grid-template-columns: 675px 675px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.skills-left{
+    max-height: 154px;
+}
+
+.skills-left p{
+    font-size: 17px;
+}
+
+.skills-left h2{
+    font-size: 55px;
+    line-height: 1;
+    padding: 20px 0;
+}
+
+.skills-right{
+    max-height: 154px;
+}
+
+.skills-right p{
+    font-size: 16px;
+    color: #ECECEC;
+    margin-top: 70px;
+    padding: 20px 0 0 50px;
+    border-left: 0.5px solid #3e3e3e;
+}
+
+.tools{
+    color: white;
+    list-style: none;
+}
+
+.tools ul{
+    list-style: none;
+}
+
+/* Slider */
+
+.techContainer img{
+    height: 100px;
+    margin: 0 40px;
+}
+
+.techContainer{
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: black;
+    white-space: nowrap;
+    position: relative;
+}
+
+.techContainer::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #161616);
+}
+
+.techContainer::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), #161616);
+}
+
+.techContainer::before, .techContainer::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.marketingContainer::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #161616);
+}
+
+.marketingContainer::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), #161616);
+}
+
+.marketingContainer::before, .marketingContainer::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.techslide{
+    display: inline-block;
+    animation: 30s slide infinite linear;
+    cursor: pointer;
+}
+
+.techContainer:hover .techslide{
+    animation-play-state: paused;
+}
+
+.marketingContainer:hover .marketing-slide{
+    animation-play-state: paused;
+}
+
+.marketing-slide{
+    display: inline-block;
+    animation: 30s slideMark infinite linear;
+    cursor: pointer;
+}
+
+.marketingContainer img{
+    height: 100px;
+    margin: 0 40px;
+}
+
+#test{
+    image-resolution: 400px;
+}
+
+.marketingContainer{
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: black;
+    white-space: nowrap;
+    position: relative;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideMark {
+    from{
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Slider Formatting */
+
+.technologies{
+    /* max-width: 1350px; */
+    margin: 0 auto;
+}
+
+.marketing{
+    /* max-width: 1350px; */
+    margin: 0 auto;
+}
+
+.tech-heading{
+    background-color: black;
+    margin-left: 9vw;
+    cursor: default;
+}
+
+.marketingHeading{
+    background-color: black;
+    margin-left: 9vw;
+    cursor: default;
+}
+
+.marketingHeading h2{
+    font-size: 35px;
+}
+
+.tech-heading h2{
+    font-size: 35px;
+}
